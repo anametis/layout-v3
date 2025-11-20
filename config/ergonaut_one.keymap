@@ -27,14 +27,14 @@
         default_layer {
             display-name = "MAIN";
             bindings = <
-&mt LGUI RBKT    &kp Q  &kp W  &kp E        &kp R            &kp T        &kp Y        &kp U           &kp I        &kp O    &kp P     &kp LBKT
-&mt LCTRL GRAVE  &kp A  &kp S  &kp D        &kp F            &kp G        &kp H        &kp J           &kp K        &kp L    &kp SEMI  &mt RCTRL SQT
-&mt LALT MINUS   &kp Z  &kp X  &kp C        &kp V            &kp B        &kp N        &kp M           &kp COMMA    &kp DOT  &kp FSLH  &mt RALT BSLH
-                               &lt RSE TAB  &mt LSHFT SPACE  &lt LWR RET  &lt LWR ESC  &mt RSHFT BSPC  &lt RSE DEL
+&kp ESCAPE        &kp Q  &kp W  &kp E        &kp R            &kp T        &kp Y        &kp U           &kp I        &kp O    &kp P     &kp DEL
+&kp GRAVE         &kp A  &kp S  &kp D        &kp F            &kp G        &kp H        &kp J           &kp K        &kp L    &kp SEMI  &kp SQT
+&kp LEFT_CONTROL  &kp Z  &kp X  &kp C        &kp V            &kp B        &kp N        &kp M           &kp COMMA    &kp DOT  &kp FSLH  &kp RALT
+                                &lt RSE TAB  &mt LSHFT SPACE  &lt LWR RET  &lt LWR ESC  &mt RSHFT BSPC  &lt RSE DEL
             >;
         };
 
-        lower_layer {
+        symbol_layer {
             display-name = "SYM";
             bindings = <
 &trans     &kp EXCLAMATION  &kp AT_SIGN    &kp HASH          &kp DOLLAR            &kp PERCENT     &kp LCTRL        &kp AMPERSAND          &kp ASTERISK       &kp MINUS         &kp PLUS              &trans
@@ -61,6 +61,15 @@
 &bt BT_CLR   &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0    &bt BT_CLR
 &sys_reset   &none           &none         &none         &none         &none         &none         &none         &none         &none         &none           &sys_reset
                                            &trans        &none         &trans        &none         &trans        &trans
+            >;
+        };
+
+        capital_layer {
+            bindings = <
+&trans  &kp RS(Q)  &kp RS(W)  &kp RS(E)  &kp RS(R)  &kp RS(T)  &kp LS(Y)  &kp LS(U)  &kp LS(I)  &kp LS(O)  &kp LS(P)     &trans
+&trans  &kp RS(A)  &kp RS(S)  &kp RS(D)  &kp RS(F)  &kp RS(G)  &kp LS(H)  &kp LS(J)  &kp LS(K)  &kp LS(L)  &kp LS(SEMI)  &kp LS(APOS)
+&trans  &kp RS(Z)  &kp RS(X)  &kp RS(C)  &kp RS(V)  &kp RS(B)  &kp RS(N)  &kp LS(M)  &trans     &trans     &trans        &trans
+                              &trans     &trans     &trans     &trans     &trans     &trans
             >;
         };
     };
