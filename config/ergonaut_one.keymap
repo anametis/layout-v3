@@ -64,10 +64,10 @@
 
         navigation_layer {
             bindings = <
-&trans  &none  &none  &none           &none            &none   &none   &none           &none         &none  &none  &trans
-&none   &none  &none  &kp LEFT_ARROW  &kp RIGHT_ARROW  &none   &none   &kp DOWN_ARROW  &kp UP_ARROW  &none  &none  &none
-&trans  &none  &none  &none           &none            &none   &none   &none           &none         &none  &none  &trans
-                      &trans          &trans           &trans  &trans  &trans          &trans
+&trans  &none  &none  &kp LG(LA(LEFT_ARROW))  &kp LG(LA(RIGHT_ARROW))  &none   &none   &kp K_SCROLL_DOWN  &kp K_SCROLL_UP  &none  &none  &trans
+&none   &none  &none  &kp LEFT_ARROW          &kp RIGHT_ARROW          &none   &none   &kp DOWN_ARROW     &kp UP_ARROW     &none  &none  &none
+&trans  &none  &none  &kp LC(LEFT_ARROW)      &kp LC(RIGHT_ARROW)      &none   &none   &kp HOME           &kp END          &none  &none  &trans
+                      &trans                  &trans                   &trans  &trans  &trans             &trans
             >;
         };
 
