@@ -16,8 +16,17 @@
         compatible = "zmk,conditional-layers";
 
         tri-layer {
-            if-layers = <LWR RSE>;
-            then-layer = <ADJ>;
+            if-layers = <2 4>;
+            then-layer = <5>;
+        };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+
+        nav_toggle {
+            bindings = <&tog 3>;
+            key-positions = <19 20 21>;
         };
     };
 
@@ -27,10 +36,19 @@
         default_layer {
             display-name = "MAIN";
             bindings = <
-&kp ESCAPE        &kp Q  &kp W  &kp E        &kp R            &kp T        &kp Y        &kp U           &kp I        &kp O    &kp P     &kp DEL
-&kp GRAVE         &kp A  &kp S  &kp D        &kp F            &kp G        &kp H        &kp J           &kp K        &kp L    &kp SEMI  &kp SQT
-&kp LEFT_CONTROL  &kp Z  &kp X  &kp C        &kp V            &kp B        &kp N        &kp M           &kp COMMA    &kp DOT  &kp FSLH  &kp RALT
-                                &lt RSE TAB  &mt LSHFT SPACE  &lt LWR RET  &lt LWR ESC  &mt RSHFT BSPC  &lt RSE DEL
+&kp ESCAPE        &kp Q  &kp W  &kp E      &kp R            &kp T      &kp Y      &kp U           &kp I      &kp O    &kp P     &kp DEL
+&kp UNDERSCORE    &kp A  &kp S  &kp D      &kp F            &kp G      &kp H      &kp J           &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LEFT_CONTROL  &kp Z  &kp X  &kp C      &kp V            &kp B      &kp N      &kp M           &kp COMMA  &kp DOT  &kp FSLH  &kp RALT
+                                &lt 4 TAB  &mt LSHFT SPACE  &lt 2 RET  &lt 2 ESC  &mt RSHFT BSPC  &lt 4 DEL
+            >;
+        };
+
+        capital_layer {
+            bindings = <
+&trans     &kp RS(Q)  &kp RS(W)  &kp RS(E)  &kp RS(R)  &kp RS(T)  &kp LS(Y)  &kp LS(U)  &kp LS(I)  &kp LS(O)  &kp LS(P)      &trans
+&kp GRAVE  &kp RS(A)  &kp RS(S)  &kp RS(D)  &kp RS(F)  &kp RS(G)  &kp LS(H)  &kp LS(J)  &kp LS(K)  &kp LS(L)  &kp LS(SEMI)   &kp LS(APOS)
+&trans     &kp RS(Z)  &kp RS(X)  &kp RS(C)  &kp RS(V)  &kp RS(B)  &kp RS(N)  &kp LS(M)  &kp EQUAL  &kp PIPE   &kp LS(SLASH)  &trans
+                                 &trans     &trans     &trans     &trans     &trans     &trans
             >;
         };
 
@@ -41,6 +59,15 @@
 &kp TILDE  &kp NUMBER_1     &kp NUMBER_2   &kp NUMBER_3      &kp NUMBER_4          &kp N5          &kp NUMBER_6     &kp N7                 &kp N8             &kp N9            &kp N0                &kp EQUAL
 &trans     &kp SLASH        &kp LESS_THAN  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp GREATER_THAN  &kp NON_US_BACKSLASH  &trans
                                            &trans            &trans                &trans          &trans           &trans                 &trans
+            >;
+        };
+
+        navigation_layer {
+            bindings = <
+&trans  &none  &none  &none           &none            &none   &none   &none           &none         &none  &none  &trans
+&none   &none  &none  &kp LEFT_ARROW  &kp RIGHT_ARROW  &none   &none   &kp DOWN_ARROW  &kp UP_ARROW  &none  &none  &none
+&trans  &none  &none  &none           &none            &none   &none   &none           &none         &none  &none  &trans
+                      &trans          &trans           &trans  &trans  &trans          &trans
             >;
         };
 
@@ -61,15 +88,6 @@
 &bt BT_CLR   &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0    &bt BT_CLR
 &sys_reset   &none           &none         &none         &none         &none         &none         &none         &none         &none         &none           &sys_reset
                                            &trans        &none         &trans        &none         &trans        &trans
-            >;
-        };
-
-        capital_layer {
-            bindings = <
-&trans  &kp RS(Q)  &kp RS(W)  &kp RS(E)  &kp RS(R)  &kp RS(T)  &kp LS(Y)  &kp LS(U)  &kp LS(I)  &kp LS(O)  &kp LS(P)     &trans
-&trans  &kp RS(A)  &kp RS(S)  &kp RS(D)  &kp RS(F)  &kp RS(G)  &kp LS(H)  &kp LS(J)  &kp LS(K)  &kp LS(L)  &kp LS(SEMI)  &kp LS(APOS)
-&trans  &kp RS(Z)  &kp RS(X)  &kp RS(C)  &kp RS(V)  &kp RS(B)  &kp RS(N)  &kp LS(M)  &trans     &trans     &trans        &trans
-                              &trans     &trans     &trans     &trans     &trans     &trans
             >;
         };
     };
