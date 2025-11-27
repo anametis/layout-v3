@@ -52,7 +52,7 @@
             bindings = <
 &trans     &kp RS(Q)  &kp RS(W)  &kp RS(E)  &kp RS(R)  &kp RS(T)  &kp LS(Y)  &kp LS(U)  &kp LS(I)  &kp LS(O)  &kp LS(P)      &trans
 &kp GRAVE  &kp RS(A)  &kp RS(S)  &kp RS(D)  &kp RS(F)  &kp RS(G)  &kp LS(H)  &kp LS(J)  &kp LS(K)  &kp LS(L)  &kp LS(SEMI)   &kp LS(APOS)
-&trans     &kp RS(Z)  &kp RS(X)  &kp RS(C)  &kp RS(V)  &kp RS(B)  &kp RS(N)  &kp LS(M)  &kp EQUAL  &kp PIPE   &kp LS(SLASH)  &trans
+&trans     &kp RS(Z)  &kp RS(X)  &kp RS(C)  &kp RS(V)  &kp RS(B)  &kp RS(N)  &kp LS(M)  &kp UNDER  &kp PIPE   &kp LS(SLASH)  &trans
                                  &trans     &trans     &trans     &trans     &trans     &trans
             >;
         };
