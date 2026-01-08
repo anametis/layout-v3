@@ -38,16 +38,16 @@
             bindings = <
 &kp ESCAPE        &kp Q        &kp W           &kp E           &kp R             &kp T         &kp Y        &kp U              &kp I            &kp O            &kp P                   &kp DEL
 &kp GRAVE         &mt LCTRL A  &mt LEFT_ALT S  &mt LEFT_GUI D  &mt LEFT_SHIFT F  &kp G         &kp H        &mt RIGHT_SHIFT J  &mt RIGHT_GUI K  &mt RIGHT_ALT L  &mt RIGHT_CONTROL SEMI  &kp SQT
-&kp LEFT_CONTROL  &kp Z        &kp X           &kp C           &kp V             &kp B         &kp N        &kp M              &kp COMMA        &kp DOT          &kp SLASH               &kp RIGHT_ALT
+&kp LEFT_CONTROL  &kp Z        &kp X           &kp C           &kp V             &kp B         &kp N        &kp M              &kp COMMA        &kp DOT          &kp UNDERSCORE          &kp RIGHT_ALT
                                                &lt 3 TAB       &lt 1 BACKSPACE   &lt 3 ESCAPE  &lt 3 ENTER  &lt 2 SPACE        &lt 3 DEL
             >;
         };
 
         capital_layer {
             bindings = <
-&trans     &kp RS(Q)  &kp RS(W)  &kp RS(E)  &kp RS(R)  &kp RS(T)  &kp LS(Y)  &kp LS(U)  &kp LS(I)  &kp LS(O)  &kp LS(P)      &trans
-&kp GRAVE  &kp RS(A)  &kp RS(S)  &kp RS(D)  &kp RS(F)  &kp RS(G)  &kp LS(H)  &kp LS(J)  &kp LS(K)  &kp LS(L)  &kp LS(SEMI)   &kp LS(APOS)
-&trans     &kp RS(Z)  &kp RS(X)  &kp RS(C)  &kp RS(V)  &kp RS(B)  &kp RS(N)  &kp LS(M)  &kp UNDER  &kp PIPE   &kp LS(SLASH)  &trans
+&trans     &kp RS(Q)  &kp RS(W)  &kp RS(E)  &kp RS(R)  &kp RS(T)  &kp LS(Y)  &kp LS(U)  &kp LS(I)  &kp LS(O)  &kp LS(P)     &trans
+&kp GRAVE  &kp RS(A)  &kp RS(S)  &kp RS(D)  &kp RS(F)  &kp RS(G)  &kp LS(H)  &kp LS(J)  &kp LS(K)  &kp LS(L)  &kp LS(SEMI)  &kp LS(APOS)
+&trans     &kp RS(Z)  &kp RS(X)  &kp RS(C)  &kp RS(V)  &kp RS(B)  &kp RS(N)  &kp LS(M)  &kp UNDER  &kp PIPE   &kp QUESTION  &trans
                                  &trans     &trans     &trans     &trans     &trans     &trans
             >;
         };
